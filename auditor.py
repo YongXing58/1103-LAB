@@ -68,3 +68,10 @@ while True:
         print("Notice: Inventory has reached exactly 500 units.")
     else:
         pass   # inventory is still within the safe range, keep going
+
+# ----------------------------------------------------------
+# Requirement 8: Reporting - print summary when loop ends
+# ----------------------------------------------------------
+print("\n----- Inventory Audit Report -----")
+print("Total Units Processed:", total_inventory)
+print("Number of Failed/Rejected Entries:", failed_entries)
