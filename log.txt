@@ -1,0 +1,47 @@
+commit 4a94aef8ce65b59942f565421a9cd1ca6501467a
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:26:26 2026 +0800
+
+    Add Dockerfile to containerize auditor.py
+
+commit 3a86531dc592e29f0d4bfb6c367406ec219e2bf9
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:26:10 2026 +0800
+
+    Requirement 8: print total units processed and failed entry count on exit
+
+commit 0c4fbd8d16677c1a6bedc8d38666facfb0ba0d22
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:26:03 2026 +0800
+
+    Requirement 7: trigger overstock alert and break loop above 500 units
+
+commit cdcc897b57676ac295c098e077191409bdfd143d
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:25:54 2026 +0800
+
+    Requirement 6: add valid entries to the running inventory total
+
+commit 3f67923468a533aa91bca8054fd44f0257e7b3cc
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:25:46 2026 +0800
+
+    Requirement 5: reject negative stock quantities
+
+commit 9bdefb53ddd34a5bd6b46eb3de84f4efd76160cb
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:25:38 2026 +0800
+
+    Requirement 3 & 4: accept stock as integer, reject non-numeric input with isdigit()
+
+commit 89454560c6a2e83d342b074dda4cf5e8bde6c951
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:25:29 2026 +0800
+
+    Requirement 2: add continuous input loop that stops on 'quit'
+
+commit f08cbfdbab3ce7cbcef2080bbcc4024ed836aa21
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:25:20 2026 +0800
+
+    Requirement 1: initialize inventory total and failed entry counter
