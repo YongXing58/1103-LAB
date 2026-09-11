@@ -55,3 +55,16 @@ while True:
     else:
         total_inventory = total_inventory + stock_quantity
         print("Accepted. Current total inventory:", total_inventory)
+
+    # --------------------------------------------------------
+    # Requirement 7: Trigger Overstock Alert (if, elif, else flow)
+    # --------------------------------------------------------
+    # If the running total goes over 500 units, we warn the user
+    # and stop the program immediately with break.
+    if total_inventory > 500:
+        print("OVERSTOCK ALERT: Inventory has exceeded 500 units! Stopping program.")
+        break
+    elif total_inventory == 500:
+        print("Notice: Inventory has reached exactly 500 units.")
+    else:
+        pass   # inventory is still within the safe range, keep going
