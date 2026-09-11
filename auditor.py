@@ -37,3 +37,14 @@ while True:
 
     # If we reach this line, the input is safe to convert to an integer
     stock_quantity = int(user_input)
+
+    # --------------------------------------------------------
+    # Requirement 5: Enforce business rules - reject negative numbers
+    # --------------------------------------------------------
+    # Note: .isdigit() already blocks a typed "-5" above (since the
+    # minus sign is not a digit), but we keep this explicit check
+    # here as our business rule.
+    if stock_quantity < 0:
+        print("Error: Negative quantities are not allowed. Entry rejected.")
+        failed_entries = failed_entries + 1
+        continue
