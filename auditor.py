@@ -23,3 +23,17 @@ while True:
     # Check if the user wants to stop the program
     if user_input == "quit":
         break   # this immediately exits the while loop
+
+    # --------------------------------------------------------
+    # Requirement 3 & 4: Accept integers only, reject invalid input
+    # --------------------------------------------------------
+    # .isdigit() returns True only if every character is a digit
+    # (0-9). This means text like "ten" and negative numbers like
+    # "-5" (because "-" is not a digit) will both fail this check.
+    if not user_input.isdigit():
+        print("Error: '" + user_input + "' is not a valid whole number. Entry rejected.")
+        failed_entries = failed_entries + 1
+        continue   # skip the rest of this loop, go ask for the next entry
+
+    # If we reach this line, the input is safe to convert to an integer
+    stock_quantity = int(user_input)
