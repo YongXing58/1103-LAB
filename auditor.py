@@ -48,3 +48,10 @@ while True:
         print("Error: Negative quantities are not allowed. Entry rejected.")
         failed_entries = failed_entries + 1
         continue
+
+    # --------------------------------------------------------
+    # Requirement 6: Manage state - keep a running total
+    # --------------------------------------------------------
+    else:
+        total_inventory = total_inventory + stock_quantity
+        print("Accepted. Current total inventory:", total_inventory)
