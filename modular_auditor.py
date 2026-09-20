@@ -51,3 +51,14 @@ def calculate_tax(amount):
     """
     tax_rate = 0.1
     return amount * tax_rate
+
+
+def generate_report(total_units, failed_attempts):
+    """
+    Requirement function 4: generate_report(total_units, failed_attempts)
+    Takes:   the total inventory processed and the number of failed entries.
+    Returns: nothing - this function's only job is to print the summary.
+    """
+    print("\n----- Inventory Audit Report -----")
+    print("Total Deliveries Processed:", total_units)
+    print("Number of Failed/Rejected Entries:", failed_attempts)
