@@ -71,3 +71,16 @@ def generate_report(total_units, failed_attempts):
 # Requirement 1: Initialize the inventory to zero at the start
 total_inventory = 0        # running total of all accepted stock units
 failed_entries = 0         # count of rejected entries
+
+# Requirement 2: Run in a continuous loop until the user types "quit"
+while True:
+
+    stock_quantity = get_valid_input()
+
+    if stock_quantity == "quit":
+        break
+
+    if stock_quantity is None:
+        # get_valid_input() already printed the error message for us
+        failed_entries = failed_entries + 1
+        continue
