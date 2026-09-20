@@ -1,3 +1,57 @@
+commit 7a35bdd93efcd81eb06ce70d440a6af68bc9ca3a
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:21:44 2026 +0800
+
+    Requirement 4: call generate_report() with final totals on exit
+
+commit 6ff255a705d887aeb409c476f4e8693519014126
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:21:36 2026 +0800
+
+    Requirement 3: process valid deliveries via process_delivery() and calculate_tax()
+
+commit 112a1e341f1cbec6f5374a9191c9a6a0f9ca40a5
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:21:27 2026 +0800
+
+    Requirement 2: add continuous loop calling get_valid_input(), stop on 'quit'
+
+commit 1d6a440015ac3d063f7e3385ed0f6432bffd385c
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:21:19 2026 +0800
+
+    Requirement 1: initialize inventory total and failed entry counter
+
+commit b2cb9f0691d1be824590883b0b1b9f1b725eb3e0
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:21:10 2026 +0800
+
+    Requirement function 4: add generate_report() to print the final summary
+
+commit f3b030e175a92fccf814c5ee2c757c155c448b9f
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:21:01 2026 +0800
+
+    Requirement function 3: add calculate_tax() to compute 10 percent delivery tax
+
+commit 9144d82ef541a24be0c7c1e264cd6166fe989823
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:20:53 2026 +0800
+
+    Requirement function 2: add process_delivery() to calculate the new running total
+
+commit 20849720a9ba7d682e9876ea92339039fe0ab20d
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:20:44 2026 +0800
+
+    Requirement function 1: add get_valid_input() to handle prompt and validation
+
+commit f36f2c786128fb646b6de039a398a625c3a5fb41
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Sep 11 12:26:31 2026 +0800
+
+    Add git log export for submission
+
 commit 4a94aef8ce65b59942f565421a9cd1ca6501467a
 Author: Yong <pufferxp@gmail.com>
 Date:   Fri Sep 11 12:26:26 2026 +0800
