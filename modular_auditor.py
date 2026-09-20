@@ -41,3 +41,13 @@ def process_delivery(current_total, new_value):
     """
     new_total = current_total + new_value
     return new_total
+
+
+def calculate_tax(amount):
+    """
+    Requirement function 3: calculate_tax(amount)
+    Takes:   the amount of one delivery.
+    Returns: the tax for that delivery (10% of the amount).
+    """
+    tax_rate = 0.1
+    return amount * tax_rate
