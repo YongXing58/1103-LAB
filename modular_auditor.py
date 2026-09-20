@@ -84,3 +84,15 @@ while True:
         # get_valid_input() already printed the error message for us
         failed_entries = failed_entries + 1
         continue
+
+    # Requirement 3: valid value - update total and calculate tax
+    total_inventory = process_delivery(total_inventory, stock_quantity)
+    tax = calculate_tax(stock_quantity)
+
+    print("Accepted. Delivery tax:", tax, "| Current total inventory:", total_inventory)
+
+    if total_inventory > 500:
+        print("OVERSTOCK ALERT: Inventory has exceeded 500 units! Stopping program.")
+        break
+    elif total_inventory == 500:
+        print("Notice: Inventory has reached exactly 500 units.")
