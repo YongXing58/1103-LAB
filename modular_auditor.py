@@ -28,3 +28,16 @@ def get_valid_input():
 
     stock_quantity = int(user_input)
     return stock_quantity
+
+
+def process_delivery(current_total, new_value):
+    """
+    Requirement function 2: process_delivery(current_total, new_value)
+    Takes:   the current running total, and the new delivery amount.
+    Returns: the new running total (current_total + new_value).
+
+    This function only calculates and returns a value - it does not
+    print anything and does not decide whether to stop the loop.
+    """
+    new_total = current_total + new_value
+    return new_total
