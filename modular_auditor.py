@@ -96,3 +96,6 @@ while True:
         break
     elif total_inventory == 500:
         print("Notice: Inventory has reached exactly 500 units.")
+
+# Requirement 4: Reporting
+generate_report(total_inventory, failed_entries)
