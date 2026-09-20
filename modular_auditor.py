@@ -62,3 +62,12 @@ def generate_report(total_units, failed_attempts):
     print("\n----- Inventory Audit Report -----")
     print("Total Deliveries Processed:", total_units)
     print("Number of Failed/Rejected Entries:", failed_attempts)
+
+
+# ----------------------------------------------------------
+# Main program: ties the functions above together
+# ----------------------------------------------------------
+
+# Requirement 1: Initialize the inventory to zero at the start
+total_inventory = 0        # running total of all accepted stock units
+failed_entries = 0         # count of rejected entries
