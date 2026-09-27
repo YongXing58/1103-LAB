@@ -126,6 +126,13 @@ while True:
     total_inventory = process_delivery(total_inventory, stock_quantity)
     tax = calculate_tax(stock_quantity)
 
+    # Requirement 2: History Tracking - record this valid transaction.
+    # Why here specifically: this is the exact point in the loop where
+    # we already know stock_quantity passed validation (get_valid_input()
+    # rejected it earlier and used continue if it hadn't), so every value
+    # that reaches this line is guaranteed to be one we want to remember.
+    history.append(stock_quantity)
+
     print("Accepted. Delivery tax:", tax, "| Current total inventory:", total_inventory)
 
     if total_inventory > 500:
