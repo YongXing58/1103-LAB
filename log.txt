@@ -1,3 +1,27 @@
+commit c8f0a42f22d4983cc8ee9c553401b55f5385f1b7
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 27 23:45:58 2026 +0800
+
+    Checkpoint c: save_inventory() writes total and history to inventory.txt on quit
+
+commit f32310027b76e8103bb96dc28b0729db40b493dc
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 27 23:45:30 2026 +0800
+
+    Checkpoint b: track every valid transaction amount in a history list
+
+commit b6726c0d0276b8e61798596c16fb933f247f3776
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 27 23:45:06 2026 +0800
+
+    Checkpoint a: load_inventory() reads saved total from inventory.txt, defaults to empty if missing
+
+commit f140e9b04c3a32cda28b6e51bcbae607ac086563
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 20 23:22:05 2026 +0800
+
+    Update git log export for Week 3 submission
+
 commit 7a35bdd93efcd81eb06ce70d440a6af68bc9ca3a
 Author: Yong <pufferxp@gmail.com>
 Date:   Sun Sep 20 23:21:44 2026 +0800
