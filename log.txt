@@ -1,3 +1,15 @@
+commit 85b521a6ba91cd5f3afc85f07dfc0ff780def9d9
+Author: Yong <pufferxp@gmail.com>
+Date:   Mon Sep 28 00:07:30 2026 +0800
+
+    Update inventory.txt from verified Docker volume-mount persistence test
+
+commit 053ee646851e0573eee84e8ffb6f87e557599d22
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Sep 27 23:46:33 2026 +0800
+
+    Update git log and inventory.txt for Week 4 submission
+
 commit c8f0a42f22d4983cc8ee9c553401b55f5385f1b7
 Author: Yong <pufferxp@gmail.com>
 Date:   Sun Sep 27 23:45:58 2026 +0800
