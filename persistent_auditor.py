@@ -95,6 +95,32 @@ def generate_report(total_units, failed_attempts):
     print("Number of Failed/Rejected Entries:", failed_attempts)
 
 
+def save_inventory(total, history):
+    """
+    Requirement 3 & 4: save_inventory(total, history)
+    Takes:   the final total and the transaction history list.
+    Returns: nothing - this function's only job is to write the file.
+
+    Why this function takes total and history as PARAMETERS instead
+    of reaching out to the main program's variables directly: this
+    keeps it "pure", same rule as process_delivery()/calculate_tax()
+    from last week - it only works with what it's given, so it could
+    be reused or tested on its own without depending on global state.
+
+    File format (must match what load_inventory() expects to read):
+      line 1 -> the total, as plain text
+      line 2 -> every history value, joined together with commas
+    """
+    with open("inventory.txt", "w") as f:
+        f.write(str(total) + "\n")
+
+        # Why str(value) inside the list comprehension: .join() can
+        # only combine strings together, but our history list holds
+        # integers - so each one must be converted to text first.
+        history_line = ",".join(str(value) for value in history)
+        f.write(history_line + "\n")
+
+
 # ----------------------------------------------------------
 # Main program: ties the functions above together
 # ----------------------------------------------------------
@@ -140,6 +166,13 @@ while True:
         break
     elif total_inventory == 500:
         print("Notice: Inventory has reached exactly 500 units.")
+
+# Requirement 3: Write-Back - save the final total and history to disk
+# Why this happens AFTER the loop ends (not inside it): we only need to
+# write the file once, when the user is done (quit, or the overstock
+# alert stopped things) - writing it on every single entry would work
+# too, but would be unnecessary disk activity for no extra benefit here.
+save_inventory(total_inventory, history)
 
 # Requirement 4: Reporting
 generate_report(total_inventory, failed_entries)
