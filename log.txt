@@ -1,3 +1,15 @@
+commit cb3a094e3a7d6cc9d68e448d87a2fb39cbe5537c
+Author: Yong <pufferxp@gmail.com>
+Date:   Tue Sep 29 12:12:29 2026 +0800
+
+    Update Dockerfile to build and run persistent_auditor.py
+
+commit 7e375c644072b0c2184a6b94468fd9ee2b7da135
+Author: Yong <pufferxp@gmail.com>
+Date:   Mon Sep 28 00:07:38 2026 +0800
+
+    Update git log export
+
 commit 85b521a6ba91cd5f3afc85f07dfc0ff780def9d9
 Author: Yong <pufferxp@gmail.com>
 Date:   Mon Sep 28 00:07:30 2026 +0800
