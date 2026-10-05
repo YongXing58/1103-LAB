@@ -1,3 +1,24 @@
+import json
+import os
+
+INVENTORY_FILE = "inventory.json"
+
+
+def load_inventory():
+    # Returns the list of products saved in inventory.json,
+    # or an empty list if the file does not exist yet.
+    if not os.path.exists(INVENTORY_FILE):
+        print(INVENTORY_FILE + " not found. Starting with an empty inventory.")
+        return []
+
+    print(INVENTORY_FILE + " found.")
+    with open(INVENTORY_FILE, "r") as f:
+        inventory = json.load(f)
+
+    print("Inventory loaded successfully.")
+    return inventory
+
+
 def add_product(inventory, product):
     # Takes the inventory list and a new product dictionary.
     # Returns True if added, False if the product ID already exists.
@@ -145,16 +166,13 @@ def menu_search(inventory):
 # Main program
 # ----------------------------------------------------------
 
-# Each product is a dictionary; the inventory is a list of them
-inventory = [
-    {"id": "P001", "name": "Laptop", "price": 1200.00, "stock": 15},
-    {"id": "P002", "name": "Mouse", "price": 25.50, "stock": 40},
-    {"id": "P003", "name": "Keyboard", "price": 45.00, "stock": 25},
-]
-
 print("=" * 40)
 print("INVENTORY MANAGEMENT SYSTEM")
 print("=" * 40)
+print()
+
+# Each product is a dictionary; the inventory is a list of them
+inventory = load_inventory()
 
 while True:
     show_menu()
