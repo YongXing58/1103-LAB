@@ -19,6 +19,13 @@ def load_inventory():
     return inventory
 
 
+def save_inventory(inventory):
+    # Writes the whole inventory list to inventory.json.
+    # indent=4 keeps the file readable if you open it in an editor.
+    with open(INVENTORY_FILE, "w") as f:
+        json.dump(inventory, f, indent=4)
+
+
 def add_product(inventory, product):
     # Takes the inventory list and a new product dictionary.
     # Returns True if added, False if the product ID already exists.
@@ -187,8 +194,13 @@ while True:
     elif option == "4":
         menu_search(inventory)
     elif option == "5":
-        print("Saving is not implemented yet.")
+        print("\nSaving inventory...")
+        save_inventory(inventory)
+        print("Inventory saved successfully to " + INVENTORY_FILE + ".")
     elif option == "6":
+        print("\nSaving inventory before exit...")
+        save_inventory(inventory)
+        print("Inventory saved successfully.")
         print("\nThank you for using Inventory Management System.")
         print("Program terminated.")
         break
