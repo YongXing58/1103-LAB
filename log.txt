@@ -1,3 +1,51 @@
+commit 42ca4f38afbce8270aa79c93b031dadd5e91d230
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Oct 23 19:48:49 2026 +0800
+
+    Completed OOP inventory management system
+
+commit 727cd0aa6aff910528cbb60114a9fe17cdf3be00
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Oct 23 19:48:48 2026 +0800
+
+    Refactored inventory system using OOP
+
+commit c97580a73d1698dfb1eda183908f3f129f0d9d58
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Oct 23 19:48:48 2026 +0800
+
+    Created Inventory class
+
+commit 3834bd52ade7037b7bd3bd4d8c91f4736b932b95
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Oct 23 19:48:48 2026 +0800
+
+    Created Product class
+
+commit 92c2a8f2038a5b5173f4492bc448380e7d0f738b
+Author: Yong <pufferxp@gmail.com>
+Date:   Mon Oct 5 22:12:43 2026 +0800
+
+    added save_inventory
+
+commit 9e79796606dec122e6a4498f948c774e192853ca
+Author: Yong <pufferxp@gmail.com>
+Date:   Mon Oct 5 22:12:26 2026 +0800
+
+    tested load inventory with inventory.json
+
+commit 89dd0c2d88de11bc378ca99110448e1eaf502e30
+Author: Yong <pufferxp@gmail.com>
+Date:   Mon Oct 5 22:12:08 2026 +0800
+
+    created product dictionaries with CRUD functions
+
+commit 5917a63b17e513e12cbe22046e658062884f72e6
+Author: Yong <pufferxp@gmail.com>
+Date:   Tue Sep 29 12:12:30 2026 +0800
+
+    Update git log export
+
 commit cb3a094e3a7d6cc9d68e448d87a2fb39cbe5537c
 Author: Yong <pufferxp@gmail.com>
 Date:   Tue Sep 29 12:12:29 2026 +0800
