@@ -1,0 +1,50 @@
+[
+    {
+        "id": "P001",
+        "name": "Laptop",
+        "price": 1200.0,
+        "stock": 15,
+        "type": "physical",
+        "weight": 2.1
+    },
+    {
+        "id": "P002",
+        "name": "Mouse",
+        "price": 25.5,
+        "stock": 40,
+        "type": "physical",
+        "weight": 0.1
+    },
+    {
+        "id": "P003",
+        "name": "Acoustic Guitar",
+        "price": 350.0,
+        "stock": 5,
+        "type": "physical",
+        "weight": 3.2
+    },
+    {
+        "id": "D001",
+        "name": "Operating System",
+        "price": 139.99,
+        "stock": 100,
+        "type": "digital",
+        "download_size": 4500.0
+    },
+    {
+        "id": "D002",
+        "name": "Photo Editor",
+        "price": 59.9,
+        "stock": 250,
+        "type": "digital",
+        "download_size": 850.0
+    },
+    {
+        "id": "S001",
+        "name": "Cloud Storage Plan",
+        "price": 9.99,
+        "stock": 500,
+        "type": "subscription",
+        "billing_months": 1
+    }
+]
