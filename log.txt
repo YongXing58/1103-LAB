@@ -1,3 +1,39 @@
+commit cbd3df412e31dc81840545249a23f1e85ed9e076
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Nov 1 17:15:23 2026 +0800
+
+    Update lab7 inventory.json from Docker run with physical and digital products
+
+commit 291891814090ffb6234822579406098c4dacfd1a
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Nov 1 17:11:00 2026 +0800
+
+    Add Lab 7 tests, demo, UML class diagram and reflection
+
+commit 9b6583ff99d5a04d533a974be27e31c76e806608
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Nov 1 17:11:00 2026 +0800
+
+    Integrate product types into inventory system with typed JSON persistence
+
+commit 724c74c2f1ff6021d57238c220b68c2abb682ae4
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Nov 1 17:11:00 2026 +0800
+
+    Make Product abstract, add PhysicalProduct, DigitalProduct and CanBeShipped interface
+
+commit 9ea510afc4fdd0fc8a32c78090981c81cb3e16e0
+Author: Yong <pufferxp@gmail.com>
+Date:   Sun Nov 1 17:10:59 2026 +0800
+
+    Add .gitignore for cache, venv, IDE and zip files
+
+commit 5b19b74b0791a5c8a1ea7b330bced872f16dc703
+Author: Yong <pufferxp@gmail.com>
+Date:   Fri Oct 23 19:53:29 2026 +0800
+
+    Update git log export
+
 commit 1612b77af80346e1bdd94ff2d420583f62a8fc3a
 Author: Yong <pufferxp@gmail.com>
 Date:   Fri Oct 23 19:53:29 2026 +0800
