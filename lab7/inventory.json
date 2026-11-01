@@ -46,5 +46,21 @@
         "stock": 500,
         "type": "subscription",
         "billing_months": 1
+    },
+    {
+        "id": "P004",
+        "name": "Desk Lamp",
+        "price": 39.9,
+        "stock": 12,
+        "type": "physical",
+        "weight": 1.5
+    },
+    {
+        "id": "D003",
+        "name": "Music Album",
+        "price": 12.99,
+        "stock": 950,
+        "type": "digital",
+        "download_size": 120.0
     }
 ]
