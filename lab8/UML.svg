@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1546" height="904" viewBox="0 0 1546 904" font-family="Consolas, 'Courier New', monospace" font-size="13">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="30" y="26" font-size="16" font-weight="bold">Lab 8 - Inventory Management System (UML class diagram)</text>
+<rect x="30" y="60" width="227" height="134" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="143.5" y="86" text-anchor="middle" font-weight="bold">Supplier</text>
+<line x1="30" y1="94" x2="257" y2="94" stroke="#222"/>
+<text x="40" y="109">supplier_id: String</text>
+<text x="40" y="127">name: String</text>
+<text x="40" y="145">contact_email: String</text>
+<line x1="30" y1="154" x2="257" y2="154" stroke="#222"/>
+<text x="40" y="169">display_information(): void</text>
+<rect x="629" y="50" width="324" height="296" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="791.0" y="76" text-anchor="middle" font-style="italic">&lt;&lt;abstract&gt;&gt;</text>
+<text x="791.0" y="94" text-anchor="middle" font-weight="bold" font-style="italic">Product</text>
+<line x1="629" y1="102" x2="953" y2="102" stroke="#222"/>
+<text x="639" y="117">supplier: Supplier</text>
+<text x="639" y="135">-product_id: String</text>
+<text x="639" y="153">-name: String</text>
+<text x="639" y="171">-price: Float</text>
+<text x="639" y="189">-stock: Integer</text>
+<line x1="629" y1="198" x2="953" y2="198" stroke="#222"/>
+<text x="639" y="213">get_product_id(): String</text>
+<text x="639" y="231">get_name(): String</text>
+<text x="639" y="249">get_price(): Float</text>
+<text x="639" y="267">get_stock(): Integer</text>
+<text x="639" y="285">update_stock(quantity: Integer): Boolean</text>
+<text x="639" y="303">display_information(): void</text>
+<text x="639" y="321" font-style="italic">get_fulfilment_info(): String {abstract}</text>
+<rect x="509" y="436" width="264" height="152" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="641.0" y="462" text-anchor="middle" font-weight="bold">PhysicalProduct</text>
+<line x1="509" y1="470" x2="773" y2="470" stroke="#222"/>
+<text x="519" y="485">-weight: Float</text>
+<line x1="509" y1="494" x2="773" y2="494" stroke="#222"/>
+<text x="519" y="509">get_weight(): Float</text>
+<text x="519" y="527">display_information(): void</text>
+<text x="519" y="545">get_fulfilment_info(): String</text>
+<text x="519" y="563">calculate_shipping_cost(): Float</text>
+<rect x="813" y="436" width="242" height="134" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="934.0" y="462" text-anchor="middle" font-weight="bold">DigitalProduct</text>
+<line x1="813" y1="470" x2="1055" y2="470" stroke="#222"/>
+<text x="823" y="485">-download_size: Float</text>
+<line x1="813" y1="494" x2="1055" y2="494" stroke="#222"/>
+<text x="823" y="509">get_download_size(): Float</text>
+<text x="823" y="527">display_information(): void</text>
+<text x="823" y="545">get_fulfilment_info(): String</text>
+<rect x="509" y="678" width="346" height="116" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="682.0" y="704" text-anchor="middle" font-style="italic">&lt;&lt;interface&gt;&gt;</text>
+<text x="682.0" y="722" text-anchor="middle" font-weight="bold">CanBeShipped</text>
+<line x1="509" y1="730" x2="855" y2="730" stroke="#222"/>
+<text x="519" y="745"></text>
+<line x1="509" y1="754" x2="855" y2="754" stroke="#222"/>
+<text x="519" y="769" font-style="italic">calculate_shipping_cost(): Float {abstract}</text>
+<rect x="1123" y="50" width="383" height="170" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1314.5" y="76" text-anchor="middle" font-weight="bold">Inventory</text>
+<line x1="1123" y1="84" x2="1506" y2="84" stroke="#222"/>
+<text x="1133" y="99">-products: Product [0..*]</text>
+<line x1="1123" y1="108" x2="1506" y2="108" stroke="#222"/>
+<text x="1133" y="123">add_product(product: Product): Boolean</text>
+<text x="1133" y="141">remove_product(product_id: String): Boolean</text>
+<text x="1133" y="159">find_product(product_id: String): Product [0..1]</text>
+<text x="1133" y="177">get_all_products(): Product [0..*]</text>
+<text x="1133" y="195">display_all_products(): void</text>
+<rect x="1123" y="330" width="264" height="116" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1255.0" y="356" text-anchor="middle" font-weight="bold">InventoryFile</text>
+<line x1="1123" y1="364" x2="1387" y2="364" stroke="#222"/>
+<text x="1133" y="379">-file_name: String</text>
+<line x1="1123" y1="388" x2="1387" y2="388" stroke="#222"/>
+<text x="1133" y="403">load(): Inventory</text>
+<text x="1133" y="421">save(inventory: Inventory): void</text>
+<rect x="30" y="499" width="449" height="170" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="254.5" y="525" text-anchor="middle" font-weight="bold">Order</text>
+<line x1="30" y1="533" x2="479" y2="533" stroke="#222"/>
+<text x="40" y="548">order_id: String</text>
+<text x="40" y="566">order_lines: OrderLine [0..*]</text>
+<line x1="30" y1="575" x2="479" y2="575" stroke="#222"/>
+<text x="40" y="590">add_order_line(product: Product, quantity: Integer): void</text>
+<text x="40" y="608">remove_order_line(product_id: String): Boolean</text>
+<text x="40" y="626">calculate_total(): Float</text>
+<text x="40" y="644">display_order(): void</text>
+<rect x="30" y="265" width="227" height="134" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="143.5" y="291" text-anchor="middle" font-weight="bold">OrderLine</text>
+<line x1="30" y1="299" x2="257" y2="299" stroke="#222"/>
+<text x="40" y="314">product: Product</text>
+<text x="40" y="332">quantity: Integer</text>
+<line x1="30" y1="341" x2="257" y2="341" stroke="#222"/>
+<text x="40" y="356">calculate_subtotal(): Float</text>
+<text x="40" y="374">display_information(): void</text>
+<polyline points="257,100 629,100" fill="none" stroke="#222" stroke-width="1.5"/>
+<text x="263" y="94" text-anchor="start" fill="#0b4f9e">1</text>
+<text x="623" y="94" text-anchor="end" fill="#0b4f9e">0..*</text>
+<text x="443.0" y="116" text-anchor="middle" fill="#0b4f9e">supplies</text>
+<polyline points="257,305 629,305" fill="none" stroke="#222" stroke-width="1.5"/>
+<text x="263" y="299" text-anchor="start" fill="#0b4f9e">0..*</text>
+<text x="623" y="299" text-anchor="end" fill="#0b4f9e">1</text>
+<text x="443.0" y="321" text-anchor="middle" fill="#0b4f9e">refers to</text>
+<polyline points="90,499 90,399" fill="none" stroke="#222" stroke-width="1.5"/>
+<polygon points="90,499 97,486 90,473 83,486" fill="#222" stroke="#222" stroke-width="1.5"/>
+<text x="98" y="467" text-anchor="start" fill="#0b4f9e">1</text>
+<text x="98" y="419" text-anchor="start" fill="#0b4f9e">0..*</text>
+<polyline points="953,90 1123,90" fill="none" stroke="#222" stroke-width="1.5"/>
+<polygon points="1123,90 1110,83 1097,90 1110,97" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<text x="1091" y="82" text-anchor="end" fill="#0b4f9e">0..1</text>
+<text x="959" y="82" text-anchor="start" fill="#0b4f9e">0..*</text>
+<text x="1028.0" y="108" text-anchor="middle" fill="#0b4f9e">contains</text>
+<polyline points="641.0,436 641.0,391 934.0,391 934.0,436" fill="none" stroke="#222" stroke-width="1.5"/>
+<polyline points="791.0,362 791.0,391" fill="none" stroke="#222" stroke-width="1.5"/>
+<polygon points="791.0,346 782.0,362 800.0,362" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<polyline points="641.0,588 641.0,678" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="7,5"/>
+<polygon points="641.0,678 650.0,662 632.0,662" fill="#fff" stroke="#222" stroke-width="1.5"/>
+<polyline points="1255.0,330 1255.0,220" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="7,5"/>
+<polyline points="1248.0,234 1255.0,220 1262.0,234" fill="none" stroke="#222" stroke-width="1.5"/>
+<text x="1263.0" y="279.0" text-anchor="start" fill="#0b4f9e">«uses»</text>
+<text x="30" y="844" font-size="12" fill="#444">Inheritance: solid line, hollow triangle at parent     Realisation: dashed line, hollow triangle at interface</text>
+<text x="30" y="861" font-size="12" fill="#444">Association: plain line     Aggregation: hollow diamond at whole     Composition: filled diamond at whole</text>
+<text x="30" y="878" font-size="12" fill="#444">Dependency: dashed line with open arrow</text>
+</svg>
